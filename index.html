@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mokita Dergi</title>
+  <style>
+    body {
+      background-color: #000000; /* Siyah arka plan */
+      color: #ffffff; /* Beyaz yazı */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #00aaff;
+    }
+    .pdf-list {
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    .pdf-list a {
+      display: block;
+      background: #111111;
+      padding: 12px 20px;
+      margin: 10px 0;
+      color: #00aaff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+    .pdf-list a:hover {
+      background: #00aaff;
+      color: #000000;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888888;
+    }
+    /* Yorumlar başlığı */
+    #comments h2 {
+      color: #00aaff;
+      max-width: 600px;
+      margin: 0 auto 15px;
+      border-bottom: 2px solid #00aaff;
+      padding-bottom: 5px;
+    }
+    /* Yorumlar kapsayıcısı */
+    #comments {
+      max-width: 600px;
+      margin: 0 auto 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mokita Dergi</h1>
+    <p>Her sayı ayrı PDF olarak aşağıda yer almaktadır.</p>
+  </header>
+
+  <section class="pdf-list">
+    <a href="pdfs/sayi1.pdf" target="_blank" rel="noopener">Mokita Dergi Sayı 1</a>
+    <a href="pdfs/sayi2.pdf" target="_blank" rel="noopener">Mokita Dergi Sayı 2</a>
+    <a href="pdfs/sayi3.pdf" target="_blank" rel="noopener">Mokita Dergi Sayı 3</a>
+  </section>
+
+  <section id="comments">
+    <h2>Yorumlar</h2>
+    <script src="https://utteranc.es/client.js"
+      repo="mokitadergi/mokitadergi"
+      issue-term="pathname"
+      theme="github-dark"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </section>
+
+  <footer>
+    © 2025 Mokita Dergi - Tüm Hakları Saklıdır
+  </footer>
+</body>
+</html>
