@@ -1,86 +1,58 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mokita Dergi</title>
-<style>
-  body {
-    background-color: #000000; /* Tam siyah */
-    color: #FFFFFF !important; /* Göz kamaştıran saf beyaz */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
-  header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  h1 {
-    color: #00aaff !important;
-  }
-  .pdf-list {
-    max-width: 600px;
-    margin: 0 auto 40px;
-  }
-  .pdf-list a {
-    display: block;
-    background: #111111;
-    padding: 12px 20px;
-    margin: 10px 0;
-    color: #00aaff !important;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.3s;
-  }
-  .pdf-list a:hover {
-    background: #00aaff;
-    color: #000000 !important;
-  }
-  footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #888888;
-  }
-  #comments h2 {
-    color: #00aaff !important;
-    max-width: 600px;
-    margin: 0 auto 15px;
-    border-bottom: 2px solid #00aaff;
-    padding-bottom: 5px;
-  }
-  #comments {
-    max-width: 600px;
-    margin: 0 auto 60px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanat & Tasarım Portfolyo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>Mokita Dergi</h1>
-  <p>Her sayı ayrı PDF olarak aşağıda yer almaktadır.</p>
-</header>
-
-<section class="pdf-list">
-  <a href="pdfs/sayi1.pdf" target="_blank" rel="noopener">Mokita Dergi Sayı 1</a>
-  <a href="pdfs/sayi2.pdf" target="_blank" rel="noopener">Mokita Dergi Sayı 2</a>
-  <a href="pdfs/sayi3.pdf" target="_blank" rel="noopener">Mokita Dergi Sayı 3</a>
-</section>
-
-<section id="comments">
-  <h2>Yorumlar</h2>
-  <script src="https://utteranc.es/client.js"
-    repo="mokitadergi/mokitadergi"
-    issue-term="pathname"
-    theme="github-dark"
-    crossorigin="anonymous"
-    async>
-  </script>
-</section>
-
-<footer>
-  © 2025 Mokita Dergi - Tüm Hakları Saklıdır
-</footer>
+  <header>
+    <div class="container">
+      <h1>Sanat ve Tasarım</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Hakkımda</a></li>
+          <li><a href="#">Portfolyo</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h2>Yaratıcılığınızı Sergileyin</h2>
+      <p>Sanat ve tasarım projelerinizi dünyayla paylaşın.</p>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="container">
+      <h2>Portfolyo</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://picsum.photos/id/1015/400/300" alt="Sanat 1">
+          <h3>Proje Başlığı 1</h3>
+          <p>Kısa açıklama veya kategori.</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/1074/400/300" alt="Sanat 2">
+          <h3>Proje Başlığı 2</h3>
+          <p>Kısa açıklama veya kategori.</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/1025/400/300" alt="Sanat 3">
+          <h3>Proje Başlığı 3</h3>
+          <p>Kısa açıklama veya kategori.</p>
+        </div>
+        <!-- Daha fazla kart ekleyebilirsiniz -->
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Sanat ve Tasarım. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
 </body>
 </html>
